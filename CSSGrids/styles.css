@@ -1,0 +1,23 @@
+.container{
+    background-color: brown;
+    height: 500px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+}
+.box{
+    background-color: aquamarine;
+    border: 3px solid black;
+    /* width: 80px; */
+    /* height: 80px; */
+}
+#box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#box3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

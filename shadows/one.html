@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --border-color: blue; /*initialise them in root to use these anywhere and not only in just one scope*/
+        }
+        .container{
+            width:100%;
+            height: 500px;
+            background-color: aquamarine;
+            border: 2px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            --primary-color: black;
+            --custom-width: 500px /*we can also initialise variables in css*/
+            height: 300px;
+            width: 500px;
+            border: 2px var(--primary-color) solid;
+            background-color: darkslateblue;
+            box-shadow: 20px 20px 10px black;
+        }
+        #para{
+            font-size: 28px;
+            /* text-shadow: 8px 8px 1px white;*/ /*single shadow */
+            text-shadow: 4px 4px 1px white, 4px 4px 1px red, 4px 4px 1px blue; /*multiple shadows*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi atque voluptatem facilis veniam tenetur sequi mollitia magnam at repudiandae, sit nesciunt quo ut placeat magni deserunt suscipit velit reiciendis nobis voluptates dolore alias. Dignissimos obcaecati architecto eum unde magni quam voluptate. Error placeat tempora repellat nam quam provident enim voluptas.</p>
+        </div>
+    </div>
+</body>
+</html>

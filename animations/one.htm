@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aquamarine;
+            border: 5px solid black;
+        }
+        #img1{
+            height: 200px;
+            width: 150px;
+            background-color: yellowgreen;
+            border: 3px solid blue;
+            border-radius: 5px;
+            margin: 10px;
+            position:relative;/*position is marked as relative so that we can use properties like 'top','left','right',etc*/
+            animation-name: rightMovement;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate; 
+            animation-fill-mode: both; 
+
+            /* @keyframes duration | easing-function | delay |
+            iteration-count | direction | fill-mode | play-state | name 
+            animation: 6s linear 2s infinite alternate none runnning rightMovement;                    /*shorthand notation*/
+        }
+        @keyframes rightMovement{
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top: 0;
+                left: 1500px;
+            }
+        }
+        #img2{
+            height: 200px;
+            width: 150px;
+            background-color: yellowgreen;
+            border: 3px solid blue;
+            border-radius: 5px;
+            margin: 10px;
+            position:relative;/*position is marked as relative so that we can use properties like 'top','left','right',etc*/
+            animation-name: leftMovement;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate; 
+            animation-fill-mode: both; 
+        }
+        @keyframes leftMovement{
+            from{
+                top: 46vh;
+                left:80vw;
+            }
+            to{
+                top: 46vh;
+                left: 0;
+            }
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            border: 3px solid blue;
+            border-radius: 50px;
+            position:relative;
+            animation-name: circleMovement;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate; 
+        }
+        @keyframes circleMovement {
+            0%{
+                top: 0;
+                left: 20px;
+            }
+            30%{
+                top: 15px;
+                left: 90%;
+            }
+            60%{
+                top: 40%;
+                left: 80%;
+            }
+            100%{
+                top: 60%;
+                left: 69%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img id="img1" src="pic2.jpeg" alt="">
+        </div>
+        <div class="box2">
+            <img id="img2" src="pic2.jpeg" alt="">
+        </div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

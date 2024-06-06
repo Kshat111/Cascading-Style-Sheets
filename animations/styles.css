@@ -1,0 +1,37 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: brown;
+    border: 2px solid black;
+    transition: all 3s linear ;
+    
+}
+p{
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box:hover{
+    transform: rotate(-45deg);
+    transform: translateX(600px);
+    /* transform: translate(400px,450px); */
+    /* transform: translateX(400px);
+    transform: translateY(450px); */
+    /* transform: skew(30deg,20deg); */
+    /* transform: skewX(30deg);
+    transform: skewY(20deg); */
+    /* transform: scaleX(0.5);
+    transform: scaleY(1.7); */
+    /* transform: scale(2); */
+    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+    /*matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())*/
+    /*shorthand notation ^-^*/
+    background-color: green;
+}

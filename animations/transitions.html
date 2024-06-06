@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100vh;
+            width: 100vw;
+            border: 5px solid black;
+            background-color: aquamarine;
+        }
+        .box{
+            height:300px;
+            width:300px;
+            border: 2px solid black;
+            background-color: bisque;
+            /*'all' keyword allows us to apply transition (smooth movement) to all properties*/
+            /*transition enables smooth movement, without transition we can also achieve destination*/
+            /* property name | duration | easing function | delay */
+            transition: all 4s linear 1s;
+        }
+        .box:hover{
+            width: 900px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <div class="box">
+        </div>
+    </div>
+</body>
+</html>

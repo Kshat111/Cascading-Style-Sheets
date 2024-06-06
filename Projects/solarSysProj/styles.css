@@ -1,0 +1,58 @@
+body{
+    background-image: url(space.jpg);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.sun {
+    background: whitesmoke;
+    box-shadow: 0 0 50px white; 
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.orbit1 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 100%;
+    margin: -50px auto;
+    animation: orbit 15s linear infinite;
+}
+.planet1 {
+    background: #c1440e;
+    box-shadow: inset -9px -9px 9px white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 34px;
+}
+.orbit2 {
+    width: 500px;
+    height: 500px;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 100%;
+    margin: -140px auto;
+    animation: orbit 40s linear infinite;
+}
+.planet2 {
+    background: #4f4cb0;
+    box-shadow: inset -3px -3px 10px white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 46px;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+        }
+}      
+  
